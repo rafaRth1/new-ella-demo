@@ -1,0 +1,14 @@
+import "../assets/logo.png";
+import "../assets/svg/user.svg";
+import "../assets/svg/heart.svg";
+import "../assets/svg/loupe.svg";
+import "../assets/svg/shopping-cart.svg";
+import "../assets/svg/user-with-headset-silhouette.svg";
+import "../assets/svg/reino-unido.svg";
+import "../assets/svg/down-chevron.svg";
+import "../assets/icon-ano.png";
+import "../assets/svg/letra-x.svg";
+import "../assets/svg/divisa.png";
+import "../assets/svg/trofeo-para-deportes.svg";
+import "../assets/svg/fast.png";
+import "../assets/slider-supermarket-1.jpg";

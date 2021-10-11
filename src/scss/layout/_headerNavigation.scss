@@ -1,0 +1,117 @@
+/*--*-- Navigation Part --*--*/
+
+.header-navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*--*-- EFECTO HOVER SLIDER_LEFT --*--*/
+
+.navigation {
+	.list-navigation {
+		display: flex;
+		padding-left: 0;
+
+		li {
+			list-style: none;
+			padding: 1.7rem;
+
+			&:nth-child(1) {
+				padding-left: 0;
+			}
+
+			a {
+				span {
+					position: relative;
+					font-size: 1.6rem;
+					font-family: $font-primary;
+					font-weight: $font-medium;
+					display: inline-block;
+					overflow: hidden;
+					color: white;
+
+					&::after {
+						content: "";
+						position: absolute;
+						display: block;
+						width: 100%;
+						height: 1px;
+						background-color: $c-white;
+						bottom: 0;
+						left: -100%;
+					}
+
+					&:hover::after {
+						left: 0;
+						transition: left 0.8s;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*--*-- HOVERS  --*--*/
+
+.new-in {
+	&:hover > .new_in_content {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.header-bottons-right-navigation {
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	.help-item {
+		svg {
+			fill: $c-blue;
+			width: 1.8rem;
+			height: 1.8rem;
+		}
+
+		span {
+			font-size: 1.4rem;
+			font-family: $font-primary;
+			color: $c-white;
+		}
+	}
+
+	.betwn-space {
+		width: 0.1rem;
+		height: 3rem;
+		background-color: $c-darkblue;
+		margin: 0 1.5rem;
+	}
+
+	.lang-groups {
+		display: flex;
+
+		svg {
+			width: 1.8rem;
+			height: 1.8rem;
+		}
+
+		span {
+			font-size: 1.4rem;
+			font-family: $font-primary;
+			color: $c-white;
+			margin: 0 1rem;
+		}
+	}
+}
+
+.arrow {
+	svg {
+		fill: $c-white;
+		width: 1rem !important;
+		height: 1rem !important;
+		stroke-width: 4;
+		stroke: white;
+		position: absolute;
+		bottom: 2.2rem;
+		right: -0.5rem;
+	}
+}

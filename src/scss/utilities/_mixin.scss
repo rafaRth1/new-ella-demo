@@ -1,0 +1,6 @@
+@mixin boton($border-size, $padding-size, $border-rad, $font-w, $color-border) {
+	border: $border-size solid $color-border;
+	padding: $padding-size;
+	border-radius: $border-rad;
+	font-weight: $font-w;
+}
